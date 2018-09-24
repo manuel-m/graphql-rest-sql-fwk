@@ -1,0 +1,22 @@
+{
+    "name": "poc-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently \"rollup -c -w\" \"nodemon --inspect dist/server.bundle.js\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^4.0.1",
+        "nodemon": "^1.18.4",
+        "rollup": "^0.66.2"
+    },
+    "dependencies": {
+        "express": "^4.16.3",
+        "express-graphql": "^0.6.12",
+        "graphql": "^14.0.2"
+    }
+}
